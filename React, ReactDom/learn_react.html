@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17.0.0/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.production.min.js"></script> 
+
+</head>
+<body>
+    <h1>Add react to website</h1>
+    <div id="root"></div>
+    <script>
+        // DOM
+        // const h1DOM = document.createElement("h1");
+        // h1DOM.title = 'Hello';
+        // h1DOM.className = 'heading';
+        // h1DOM.innerHTML = 'Hello guys';
+        // document.body.appendChild(h1DOM);
+
+        // const h2DOM = document.createElement('h2');
+        // h2DOM.id = 'h2';
+        // h2DOM.className = 'haha';
+        // h2DOM.title = 'leilei';
+        // h2DOM.innerHTML = 'Xin chào các bạn';
+        // h2DOM.style.color = 'red';
+        // document.body.appendChild(h2DOM);
+
+        // //React
+        // const h1React = React.createElement('h1', {
+        //     title: 'Hello',
+        //     className: 'huhu'
+        // }, 'Hello bạn ơi');
+        // console.dir(h1DOM);
+        // console.dir(h1React);
+
+        // const h2React = React.createElement('h3',{
+        //     id: 'kaka',
+        //     className: 'kiki',
+        //     title: 'Tập trung'
+        // }, 'Tập trung nhiều vào');
+
+
+        // const ulDiv = document.createElement('ul');
+        // const liFirst = document.createElement('li');
+        // liFirst.innerHTML = 'Javascript';
+        // const liSecond = document.createElement('li');
+        // liSecond.innerHTML = 'ReactJs';
+
+        // ulDiv.appendChild(liFirst);
+        // ulDiv.appendChild(liSecond);
+        // document.body.appendChild(ulDiv);
+
+        // react
+        // const tryR = React.createElement(
+        //     'ul',
+        //     null,
+        //     React.createElement('li',null,'Reactjs'),
+        //     React.createElement('li',null,'Javascript')
+        // );
+
+        const exSeven = document.createElement('div');
+        exSeven.className = 'post-item';
+
+        const leReact = document.createElement('h2');
+        leReact.title= 'Học React tại F8';
+        leReact.innerHTML = 'Học React Js';
+
+        const reactAdvance = document.createElement('p');
+        reactAdvance.innerHTML = 'Học ReactJS từ cơ bản tới nâng cao';
+
+        exSeven.appendChild(leReact);
+        exSeven.appendChild(reactAdvance);
+        document.body.appendChild(exSeven);
+
+
+        // React 
+        const eSe = React.createElement(
+            'div',
+            {
+                className : 'post-item'
+            },
+            React.createElement(
+                {
+                    title: 'Học React tại F8'
+                },
+                'Học React Js'
+            ),
+            React.createElement(
+                'p',
+                null,
+                'Học ReactJs từ cơ bản tới nâng cao'
+            )
+
+        );
+        // console.dir(eSe);
+        // Get root element
+        const root = document.getElementById('root');
+        ReactDOM.render(eSe, root);
+    </script>
+   
+</body>
+</html>

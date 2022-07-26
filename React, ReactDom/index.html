@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <h1 id="heading">Hello guys</h1> -->
+    <script>
+        // const h1 = document.querySelector('#heading');
+        // console.dir(h1);
+        const root = document.createElement('h1');
+        root.innerHTML = 'Hello guys';
+        document.body.appendChild(root);
+        const h1 = document.createElement('h1');
+        h1.id='hello';
+        h1.innerHTML = 'Cố gắng lên bạn ơi';
+        h1.style.color = 'red';
+        root.body.appendChild(h1)
+    </script>
+</body>
+</html>
